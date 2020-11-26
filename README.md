@@ -7,7 +7,7 @@ threeJs绘制三维光点地球
 
 实现效果：
 
-![](https://pic.downk.cc/item/5fbf603c15e77190840818ff.gif)
+![实现效果](https://pic.downk.cc/item/5fbf603c15e77190840818ff.gif)
 
 
 ## 安装&运行
