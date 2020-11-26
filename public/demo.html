@@ -1,0 +1,500 @@
+<html class="no-js" lang="" xmlns="http://www.w3.org/1999/xhtml" data-desktop="1" data-mobile="2" data-landscape="3"
+      style="box-sizing: border-box; font-size: 18px;">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Earth 2050: A glimpse into the future | Kaspersky</title>
+  <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <!--OPEN GRAPH-->
+  <!--OPEN GRAPH COMPLETE-->
+  <script>dataLayer = [];</script>
+  <!-- Google Tag Manager -->
+  <!-- End Google Tag Manager -->
+  <link rel="alternate" hreflang="ru" href="https://2050.earth/ru/">
+  <link rel="preload" href="/css/Kaspersky.min.css?id=860c467f7dcc56afa779" as="style">
+  <link rel="preload" href="/css/libs.css?id=51cc5ed52d72fadd9055" as="style">
+  <link rel="preload" href="/css/app.css?id=c7b722d05e5f3a64a6af" as="style">
+  <link rel="stylesheet" href="/css/Kaspersky.min.css?id=860c467f7dcc56afa779">
+  <link rel="stylesheet" href="/css/libs.css?id=51cc5ed52d72fadd9055">
+  <link rel="stylesheet" href="/css/app.css?id=c7b722d05e5f3a64a6af">
+  <script src="http://libs.baidu.com/jquery/1.10.2/jquery.js"></script>
+  <script defer="" src="./demojs/assets.min.js"></script>
+  <script defer="" src="./demojs/three.84.js"></script>
+  <script defer="" src="./demojs/Kaspersky.min.js"></script>
+  <script defer="" src="./demojs/ws-client.js"></script>
+  <script defer="" src="./demojs/hexasphere.js"></script>
+</head>
+<body>
+<!-- End Google Tag Manager (noscript) -->
+<!--<div class="transition-wrapper transition-wrapper_initialized transition-wrapper_fade-out">
+  <div class="transition-hexagon-bg transition-hexagon_a-out"
+       style="width: 193px; height: 223.992px; left: -96.5px; top: 0px;">
+    <div class="transition-hexagon"></div>
+  </div>
+  <div class="transition-hexagon-bg transition-hexagon_a-out"
+       style="width: 193px; height: 223.992px; left: -95.5px; top: 0px;">
+    <div class="transition-hexagon"></div>
+  </div>
+  <div class="transition__preloader"></div>
+</div>-->
+<!--<div class="k-menu">
+  <label for="k-menu-toggle" class="k-menu-item k-menu-item_hamburger">
+    <div class="notifications-dot-tooltip js-notification-dot "></div>
+    <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path fill="#FFF" fill-rule="evenodd"
+            d="M3 3h18a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 8h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2zm0 8h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2z"></path>
+    </svg>
+  </label>
+  <div class="landscape-orientation background">
+    <div class="row landscape-orientation__pic-row">
+      <svg class="landscape-orientation__pic" width="213" height="211">
+        <image xlink:href="/images/landscape-orientation.svg" width="100%" height="100%"></image>
+      </svg>
+    </div>
+    <div class="row landscape-orientation__text-row">
+      <div class="landscape-orientation__text" data-localization="landscape.title"></div>
+    </div>
+  </div>
+  <div class="k-menu-item k-menu__logo clearfix"><a href="https://2050.earth" class="logo"></a></div>
+  <input type="checkbox" id="k-menu-toggle" class="checkbox-hidden">
+  <div class="k-menu__container">
+    <div class="k-menu-item k-menu-item_login k-menu__authorization">
+      <div class="authorization js-top-menu-autorization">
+        <div class="toogle-page">
+          <div class="toogle-page__wrap-link">
+            <span class="toogle-page__link toogle-page__link&#45;&#45;active">Map</span>
+            <span class="toogle-page__link js-toogle-main-page" data-page="feed">Feed</span>
+          </div>
+        </div>
+        <ul class="list nav-menu">
+          <li class="list__item  nav-menu__item"><a hreflang="en" class="nav-menu-app__link " href="/artworks">ART</a>
+          </li>
+          <li class="list__item  nav-menu__item"><a hreflang="en" class="nav-menu-app__link " href="/predictions">PREDICTIONS</a>
+          </li>
+          <li class="list__item  nav-menu__item"><a hreflang="en" class="nav-menu-app__link "
+                                                    href="/feedback">FEEDBACK</a></li>
+          <li class="list__item  nav-menu__item"><a hreflang="en" class="nav-menu-app__link  " href="/about">ABOUT</a>
+          </li>
+        </ul>
+        <div class="lang-menu">
+          <div class="lang-menu__hide-menu popup-lang tooltip-menu js-tooltip-window">
+            <a class="popup-lang__link  popup-lang__link&#45;&#45;active " href="https://2050.earth/lang/en">
+              <div class="popup-lang__icon">
+                <img src="/images/us-small-flag.svg" alt="English">
+              </div>
+              English
+            </a>
+            <a class="popup-lang__link " href="https://2050.earth/lang/ru">
+              <div class="popup-lang__icon">
+                <img src="/images/rus-small-flag.svg" alt="Русский">
+              </div>
+              Русский
+            </a>
+          </div>
+
+          <div class="js-tooltip-menu lang-menu__button">
+            <span class="lang-menu__selected-item">en</span>
+            <svg class="lang-menu__arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                    d="M8 8.303L5.349 5.65A1.2 1.2 0 1 0 3.65 7.35l3.5 3.5a1.2 1.2 0 0 0 1.698 0l3.5-3.5A1.2 1.2 0 0 0 10.65 5.65L8 8.303z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="search-header-block">
+          <button class="search-header-block__button js-search-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                    d="M14.809 12.863a.633.633 0 0 1 .191.465.633.633 0 0 1-.191.465l-.766.766a.633.633 0 0 1-.465.191.633.633 0 0 1-.465-.191l-2.734-2.735a.633.633 0 0 1-.192-.465v-.437a5.51 5.51 0 0 1-3.5 1.203 5.524 5.524 0 0 1-2.857-.766 5.746 5.746 0 0 1-2.064-2.064A5.524 5.524 0 0 1 1 6.438c0-1.04.255-1.992.766-2.858A5.746 5.746 0 0 1 3.83 1.516 5.524 5.524 0 0 1 6.687.75c1.04 0 1.992.255 2.858.766a5.746 5.746 0 0 1 2.064 2.064c.51.866.766 1.818.766 2.858a5.51 5.51 0 0 1-1.203 3.5h.437c.183 0 .338.063.465.19l2.735 2.735zM6.687 9.938a3.47 3.47 0 0 0 1.764-.465c.538-.31.962-.734 1.272-1.272a3.47 3.47 0 0 0 .464-1.763 3.47 3.47 0 0 0-.464-1.764A3.405 3.405 0 0 0 8.45 3.402a3.47 3.47 0 0 0-1.764-.464 3.47 3.47 0 0 0-1.763.464c-.538.31-.962.734-1.272 1.272a3.47 3.47 0 0 0-.465 1.764c0 .638.155 1.225.465 1.763.31.538.734.962 1.272 1.272a3.47 3.47 0 0 0 1.763.465z"></path>
+            </svg>
+          </button>
+        </div>
+        <a hreflang="en" href="https://2050.earth/login" class="button authorization__login-button">
+          <span class="button__content" data-localization="authorization.title">Sign in</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-menu js-mobile-menu">
+    <label for="k-menu-toggle" class="mobile-menu__close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+              d="M8 6.586l5.293-5.293a1 1 0 0 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 1 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 1 1 1.414-1.414L8 6.586z"></path>
+      </svg>
+    </label>
+    <div class="mobile-menu__top">
+      <div class="mobile-menu__lang mobile-lang">
+        <span class="mobile-lang__link mobile-lang__link&#45;&#45;active">EN</span>
+        <a class="mobile-lang__link" href="https://2050.earth/lang/ru">RU</a>
+
+      </div>
+      <div class="mobile-menu__menu">
+        <a hreflang="en" href="/artworks" class="mobile-menu__link">ART</a>
+        <a hreflang="en" href="/predictions" class="mobile-menu__link">PREDICTIONS</a>
+        <a hreflang="en" href="/feedback" class="mobile-menu__link">FEEDBACK</a>
+        <a hreflang="en" href="/about" class="mobile-menu__link">ABOUT</a>
+        <a hreflang="en" class="mobile-menu__link mobile-menu__link&#45;&#45;icon js-search-btn" href="#">
+          SEARCH
+          <div class="mobile-menu__link-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                    d="M14.809 12.863a.633.633 0 0 1 .191.465.633.633 0 0 1-.191.465l-.766.766a.633.633 0 0 1-.465.191.633.633 0 0 1-.465-.191l-2.734-2.735a.633.633 0 0 1-.192-.465v-.437a5.51 5.51 0 0 1-3.5 1.203 5.524 5.524 0 0 1-2.857-.766 5.746 5.746 0 0 1-2.064-2.064A5.524 5.524 0 0 1 1 6.438c0-1.04.255-1.992.766-2.858A5.746 5.746 0 0 1 3.83 1.516 5.524 5.524 0 0 1 6.687.75c1.04 0 1.992.255 2.858.766a5.746 5.746 0 0 1 2.064 2.064c.51.866.766 1.818.766 2.858a5.51 5.51 0 0 1-1.203 3.5h.437c.183 0 .338.063.465.19l2.735 2.735zM6.687 9.938a3.47 3.47 0 0 0 1.764-.465c.538-.31.962-.734 1.272-1.272a3.47 3.47 0 0 0 .464-1.763 3.47 3.47 0 0 0-.464-1.764A3.405 3.405 0 0 0 8.45 3.402a3.47 3.47 0 0 0-1.764-.464 3.47 3.47 0 0 0-1.763.464c-.538.31-.962.734-1.272 1.272a3.47 3.47 0 0 0-.465 1.764c0 .638.155 1.225.465 1.763.31.538.734.962 1.272 1.272a3.47 3.47 0 0 0 1.763.465z"></path>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="mobile-menu__bottom">
+      <a hreflang="en" href="https://2050.earth/login" class="button mobile-menu__button">
+        <span class="button__content">Sign in</span>
+      </a>
+    </div>
+  </div>
+  <div class="mobile-menu__overlay js-mobile-menu-overlay"></div>
+</div>-->
+<!--<div class="search-form js-search-form">
+  <form class="search-form__form">
+    <div class="search-form__left">
+      <input class="search-form__input" type="text" name="search" autocomplete="off"
+             placeholder="What are you looking for?">
+    </div>
+    <div class="search-form__right">
+      <button type="submit" class="button search-form__submit search-submit">
+        <span class="search-submit__text">Search</span>
+        <span class="search-submit__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <path fill-rule="evenodd"
+          d="M14.809 12.863a.633.633 0 0 1 .191.465.633.633 0 0 1-.191.465l-.766.766a.633.633 0 0 1-.465.191.633.633 0 0 1-.465-.191l-2.734-2.735a.633.633 0 0 1-.192-.465v-.437a5.51 5.51 0 0 1-3.5 1.203 5.524 5.524 0 0 1-2.857-.766 5.746 5.746 0 0 1-2.064-2.064A5.524 5.524 0 0 1 1 6.438c0-1.04.255-1.992.766-2.858A5.746 5.746 0 0 1 3.83 1.516 5.524 5.524 0 0 1 6.687.75c1.04 0 1.992.255 2.858.766a5.746 5.746 0 0 1 2.064 2.064c.51.866.766 1.818.766 2.858a5.51 5.51 0 0 1-1.203 3.5h.437c.183 0 .338.063.465.19l2.735 2.735zM6.687 9.938a3.47 3.47 0 0 0 1.764-.465c.538-.31.962-.734 1.272-1.272a3.47 3.47 0 0 0 .464-1.763 3.47 3.47 0 0 0-.464-1.764A3.405 3.405 0 0 0 8.45 3.402a3.47 3.47 0 0 0-1.764-.464 3.47 3.47 0 0 0-1.763.464c-.538.31-.962.734-1.272 1.272a3.47 3.47 0 0 0-.465 1.764c0 .638.155 1.225.465 1.763.31.538.734.962 1.272 1.272a3.47 3.47 0 0 0 1.763.465z"></path>
+</svg>                </span>
+      </button>
+      <div class="search-form__close js-close-search-form">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+                d="M8 6.586l5.293-5.293a1 1 0 0 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 1 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 1 1 1.414-1.414L8 6.586z"></path>
+        </svg>
+      </div>
+    </div>
+  </form>
+  <div class="search-form__tags">
+    <div data-search="Ai" class="tag js-tag">Ai</div>
+    <div data-search="Beauty" class="tag js-tag">Beauty</div>
+    <div data-search="Biotech" class="tag js-tag">Biotech</div>
+    <div data-search="Business" class="tag js-tag">Business</div>
+    <div data-search="City" class="tag js-tag">City</div>
+    <div data-search="Clothing" class="tag js-tag">Clothing</div>
+    <div data-search="Communication" class="tag js-tag">Communication</div>
+    <div data-search="Construction" class="tag js-tag">Construction</div>
+    <div data-search="Education" class="tag js-tag">Education</div>
+    <div data-search="Energy" class="tag js-tag">Energy</div>
+    <div data-search="Entertainment" class="tag js-tag">Entertainment</div>
+    <div data-search="Family" class="tag js-tag">Family</div>
+    <div data-search="Food" class="tag js-tag">Food</div>
+    <div data-search="Gadgets" class="tag js-tag">Gadgets</div>
+    <div data-search="Government" class="tag js-tag">Government</div>
+    <div data-search="Home" class="tag js-tag">Home</div>
+    <div data-search="Human" class="tag js-tag">Human</div>
+    <div data-search="Medicine" class="tag js-tag">Medicine</div>
+    <div data-search="Nature" class="tag js-tag">Nature</div>
+    <div data-search="Privacy" class="tag js-tag">Privacy</div>
+    <div data-search="Robots" class="tag js-tag">Robots</div>
+    <div data-search="Society" class="tag js-tag">Society</div>
+    <div data-search="Space" class="tag js-tag">Space</div>
+    <div data-search="Sport" class="tag js-tag">Sport</div>
+    <div data-search="Threats" class="tag js-tag">Threats</div>
+    <div data-search="Transport" class="tag js-tag">Transport</div>
+    <div data-search="Work" class="tag js-tag">Work</div>
+  </div>
+</div>-->
+<div class="kaspersky-app kaspersky-app__map">
+  <!--<div class="modal modal_static">
+    <div class="modal__content">
+      <div class="modal__ui modal-message pattern pattern_lines-4 modal__ui_visible" data-no-close="">
+        <div class="pattern__content">
+          <div class="modal-message__title" data-localization="index.no_webgl"></div>
+          <p class="modal-message__body"></p></div>
+      </div>
+    </div>
+  </div>-->
+  <div class="main-container">
+    <!--<h1 class="h1-invisible"></h1>
+    <script id="earth-popup" type="text/x-handlebars-template">
+      <div class="earth-popup">
+        {{#each this}}
+          <div class="earth-popup__item  earth-popup__item_{{@index}}">
+            <div class="earth-popup__item-shadow"></div>
+            <div class="earth-popup__preview-hexagon">
+              <div class="earth-popup__preview">
+                <div class="hexagon__image" style="background-image: url('{{preview}}')"></div>
+              </div>
+            </div>
+            <div class="earth-popup__content-container">
+              <div class="earth-popup__content-top">
+                <div class="earth-popup__name-contry">{{name}}</div>
+                <div class="earth-popup__flag">
+                  <img class="earth-popup__flag-img" src="{{country.flag}}" alt="">
+                </div>
+              </div>
+              <div class="earth-popup__content-count">
+                {{briefs_text}}
+              </div>
+              <div class="earth-popup__content-list">
+                {{#each works_list}}
+                  <a class="earth-popup__content-link" href="{{link}}">
+                    <span class="earth-popup__content-text">{{name}}</span>
+                  </a>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </script>
+    <script id="earth-mobile-tip" type="text/x-handlebars-template">
+      {{#each this}}
+        <div class="mobile-tip">
+          <div class="mobile-tip__top">
+            <div class="mobile-tip__name">{{name}}</div>
+            <div class="mobile-tip__flag">
+              <img class="mobile-tip__flag-img" src="{{country.flag}}" alt="">
+            </div>
+          </div>
+          <div class="mobile-tip__content-count">{{more_one works_list briefs_text ""}}</div>
+          <div class="mobile-tip__btn">
+            <span>{{more}}</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                    d="M9.003 8L6.35 5.349A1.2 1.2 0 0 1 8.05 3.65l3.5 3.5a1.2 1.2 0 0 1 0 1.698l-3.5 3.5A1.2 1.2 0 1 1 6.35 10.65L9.003 8z"/>
+            </svg>
+          </div>
+        </div>
+      {{/each}}
+    </script>
+    <div class="help">
+      <div class="help__cont" data-localization="index.helper"></div>
+    </div>-->
+<!--    <canvas width="1058" height="977" style="width: 1058px; height: 977px;"></canvas>-->
+    <!--<div class="planet-comment-line"
+         style="transform: translate(244.393px, 277.134px) rotate(0.651929rad); width: 61.481px;"></div>
+    <div class="planet-comment"
+         style="transform: translate(244.393px, 277.134px); height: auto; width: auto; padding: 8px 12px; margin: 0px; opacity: 1;">
+      <div class="planet-comment-text" href="/predictions/toaster-anti-virus">Toaster anti-virus</div>
+    </div>-->
+  </div>
+  <!--<div class="timeline-new">
+    <div data-year="2030" class="js-timeline-item timeline-new__item active">2030</div>
+    <div data-year="2040" class="js-timeline-item timeline-new__item">2040</div>
+    <div data-year="2050" class="js-timeline-item timeline-new__item">2050</div>
+  </div>
+  <div class="toogle-map-mobile">
+    <div class="toogle-page">
+      <div class="toogle-page__wrap-link">
+        <span class="toogle-page__link toogle-page__link&#45;&#45;active">Map</span>
+        <span class="toogle-page__link js-toogle-main-page" data-page="feed">Feed</span>
+      </div>
+    </div>
+  </div>-->
+</div>
+<!--<div class="best-of-week">
+  <div class="best-of-week__header">
+    <svg aria-hidden="true" width="14" height="22" focusable="false" data-prefix="fas" data-icon="fire"
+         class="svg-inline&#45;&#45;fa fa-fire fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+      <path fill="currentColor"
+            d="M216 23.86c0-23.8-30.65-32.77-44.15-13.04C48 191.85 224 200 224 288c0 35.63-29.11 64.46-64.85 63.99-35.17-.45-63.15-29.77-63.15-64.94v-85.51c0-21.7-26.47-32.23-41.43-16.5C27.8 213.16 0 261.33 0 320c0 105.87 86.13 192 192 192s192-86.13 192-192c0-170.29-168-193-168-296.14z"></path>
+    </svg>
+    What's hot
+  </div>
+  <div class="js-best-of-week">
+    <div class="best-of-week__list"
+         style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+      <a href="/artworks/do-androids-dream-of-electric-sheep" class="prediction-block-small best-of-week__slide">
+        <div class="prediction-block-small__top year-town-block">
+          <span class="prediction-block-small__year year-town-block__year">2050</span>
+          <span class="prediction-block-small__point year-town-block__point"></span>
+          <span class="prediction-block-small__city year-town-block__city">Chicago</span>
+        </div>
+        <div class="prediction-block-small__wrap-dectiption">
+          <div class="prediction-block-small__header">Do androids dream of electric sheep?</div>
+          <div class="prediction-block-small__image">
+            <img src="/images/uploads/1657c6480dcd22e0e59fcd83bece0b3c_64_64.jpg"
+                 alt="Do androids dream of electric sheep?">
+          </div>
+        </div>
+        <div class="prediction-block-small__author">Pavel Vophira</div>
+      </a>
+      <a href="/artworks/the-vr-revolution-comes-to-neural-interfaces"
+         class="prediction-block-small best-of-week__slide">
+        <div class="prediction-block-small__top year-town-block">
+          <span class="prediction-block-small__year year-town-block__year">2050</span>
+          <span class="prediction-block-small__point year-town-block__point"></span>
+          <span class="prediction-block-small__city year-town-block__city">Rio de Janeiro</span>
+        </div>
+        <div class="prediction-block-small__wrap-dectiption">
+          <div class="prediction-block-small__header">The VR revolution comes to neural interfaces</div>
+          <div class="prediction-block-small__image">
+            <img src="/images/uploads/9ba36304d2af5dbbc15ccdea08f7698a_64_64.png"
+                 alt="The VR revolution comes to neural interfaces">
+          </div>
+        </div>
+        <div class="prediction-block-small__author">Sergey Orekhov</div>
+      </a>
+      <a href="/artworks/communities-of-robots" class="prediction-block-small best-of-week__slide">
+        <div class="prediction-block-small__top year-town-block">
+          <span class="prediction-block-small__year year-town-block__year">2040</span>
+          <span class="prediction-block-small__point year-town-block__point"></span>
+          <span class="prediction-block-small__city year-town-block__city">Barcelona</span>
+        </div>
+        <div class="prediction-block-small__wrap-dectiption">
+          <div class="prediction-block-small__header">Communities of robots</div>
+          <div class="prediction-block-small__image">
+            <img src="/images/uploads/f60ba6c78e8b7f71b1da518a263b1fab_64_64.jpg" alt="Communities of robots">
+          </div>
+        </div>
+        <div class="prediction-block-small__author">Rustam Ha</div>
+      </a>
+      <a href="/artworks/3d-printing-transforms-vehicles" class="prediction-block-small best-of-week__slide">
+        <div class="prediction-block-small__top year-town-block">
+          <span class="prediction-block-small__year year-town-block__year">2050</span>
+          <span class="prediction-block-small__point year-town-block__point"></span>
+          <span class="prediction-block-small__city year-town-block__city">Detroit</span>
+        </div>
+        <div class="prediction-block-small__wrap-dectiption">
+          <div class="prediction-block-small__header">3D printing transforms vehicles</div>
+          <div class="prediction-block-small__image">
+            <img src="/images/uploads/88b2ce2f90491fa55eaa5a93748b1d9d_64_64.png" alt="3D printing transforms vehicles">
+          </div>
+        </div>
+        <div class="prediction-block-small__author">Igor Yermolenko</div>
+      </a>
+      <a href="/artworks/kusatsu-2050-bubbling-with-energy" class="prediction-block-small best-of-week__slide">
+        <div class="prediction-block-small__top year-town-block">
+          <span class="prediction-block-small__year year-town-block__year">2050</span>
+          <span class="prediction-block-small__point year-town-block__point"></span>
+          <span class="prediction-block-small__city year-town-block__city">Kusatsu</span>
+        </div>
+        <div class="prediction-block-small__wrap-dectiption">
+          <div class="prediction-block-small__header">Kusatsu-2050: Bubbling with energy</div>
+          <div class="prediction-block-small__image">
+            <img src="/images/uploads/3a78bc504670d2d016fab8c7f8db4e26_64_64.png"
+                 alt="Kusatsu-2050: Bubbling with energy">
+          </div>
+        </div>
+        <div class="prediction-block-small__author">Alex Feliksovich</div>
+      </a>
+      <a href="/artworks/human-body-tech-from-prostheses-to-immortality"
+         class="prediction-block-small best-of-week__slide">
+        <div class="prediction-block-small__top year-town-block">
+          <span class="prediction-block-small__year year-town-block__year">2050</span>
+          <span class="prediction-block-small__point year-town-block__point"></span>
+          <span class="prediction-block-small__city year-town-block__city">Kusatsu</span>
+        </div>
+        <div class="prediction-block-small__wrap-dectiption">
+          <div class="prediction-block-small__header">Human body tech: from prostheses to immortality</div>
+          <div class="prediction-block-small__image">
+            <img src="/images/uploads/9c602a5404e926c77367f08dae05753e_64_64.png"
+                 alt="Human body tech: from prostheses to immortality">
+          </div>
+        </div>
+        <div class="prediction-block-small__author">Richard Yu</div>
+      </a>
+      <a href="/artworks/the-future-of-morocco" class="prediction-block-small best-of-week__slide">
+        <div class="prediction-block-small__top year-town-block">
+          <span class="prediction-block-small__year year-town-block__year">2050</span>
+          <span class="prediction-block-small__point year-town-block__point"></span>
+          <span class="prediction-block-small__city year-town-block__city">Rabat</span>
+        </div>
+        <div class="prediction-block-small__wrap-dectiption">
+          <div class="prediction-block-small__header">The future of Morocco</div>
+          <div class="prediction-block-small__image">
+            <img src="/images/uploads/4393c6e8f85cd597236451747d7061d3_64_64.png" alt="The future of Morocco">
+          </div>
+        </div>
+        <div class="prediction-block-small__author">Artem Khorchev</div>
+      </a>
+      <a href="/artworks/an-underwater-city" class="prediction-block-small best-of-week__slide">
+        <div class="prediction-block-small__top year-town-block">
+          <span class="prediction-block-small__year year-town-block__year">2050</span>
+          <span class="prediction-block-small__point year-town-block__point"></span>
+          <span class="prediction-block-small__city year-town-block__city">Rabat</span>
+        </div>
+        <div class="prediction-block-small__wrap-dectiption">
+          <div class="prediction-block-small__header">An underwater city</div>
+          <div class="prediction-block-small__image">
+            <img src="/images/uploads/13663d028153be5d1e492a75216cf02f_64_64.png" alt="An underwater city">
+          </div>
+        </div>
+        <div class="prediction-block-small__author">Artem Khorchev</div>
+      </a>
+      <a href="/artworks/sao-paulo-2050" class="prediction-block-small best-of-week__slide">
+        <div class="prediction-block-small__top year-town-block">
+          <span class="prediction-block-small__year year-town-block__year">2050</span>
+          <span class="prediction-block-small__point year-town-block__point"></span>
+          <span class="prediction-block-small__city year-town-block__city">Sao Paulo</span>
+        </div>
+        <div class="prediction-block-small__wrap-dectiption">
+          <div class="prediction-block-small__header">Sao Paulo 2050</div>
+          <div class="prediction-block-small__image">
+            <img src="/images/uploads/94305ee7fcb664278e56e693fa9addd5_64_64.png" alt="Sao Paulo 2050">
+          </div>
+        </div>
+        <div class="prediction-block-small__author">Alex Feliksovich</div>
+      </a>
+      <a href="/predictions/from-digital-intuition-to-cyberimmunity" class="prediction-block-small best-of-week__slide">
+        <div class="prediction-block-small__top year-town-block">
+          <span class="prediction-block-small__year year-town-block__year">2050</span>
+          <span class="prediction-block-small__point year-town-block__point"></span>
+          <span class="prediction-block-small__city year-town-block__city">Wuhan</span>
+        </div>
+        <div class="prediction-block-small__wrap-dectiption">
+          <div class="prediction-block-small__header">From digital intuition to cyberimmunity</div>
+        </div>
+        <div class="prediction-block-small__author">Eugene Kaspersky</div>
+      </a>
+    </div>
+    <div class="iScrollVerticalScrollbar iScrollLoneScrollbar" style="overflow: hidden;">
+      <div class="iScrollIndicator"
+           style="transition-duration: 0ms; display: block; height: 447px; transform: translate(0px, 0px) translateZ(0px); transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);"></div>
+    </div>
+  </div>
+</div>-->
+
+<!--<div class="footer">
+  <div class="k-menu-item k-menu__links">
+    <a class="k-menu__link-footer" target="_blank" href="https://kaspersky.com">© Kaspersky 2020</a>
+    <a class="k-menu__link-footer" target="_blank" href="https://www.kaspersky.com/web-privacy-policy">Privacy
+      Policy</a>
+  </div>
+  <div class="k-menu-item k-menu__socials social-link">
+    <ul class="social-link__list">
+      <li class="social-link__item">
+        <a href="https://facebook.com/Kaspersky" class="social-link__icon" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+            <path fill-rule="nonzero"
+                  d="M6.496 14.75V8.488H4.391V6h2.105V4.031c0-1.039.292-1.845.875-2.42C7.954 1.037 8.73.75 9.695.75c.784 0 1.422.036 1.914.11v2.214h-1.312c-.492 0-.83.11-1.012.328-.146.183-.219.474-.219.875V6h2.325l-.329 2.488H9.066v6.262h-2.57z"></path>
+          </svg>
+        </a>
+      </li>
+      <li class="social-link__item">
+        <a href="https://twitter.com/Kaspersky" class="social-link__icon" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+            <path fill-rule="nonzero"
+                  d="M13.55 4.906c.019.073.028.192.028.356 0 1.312-.319 2.58-.957 3.8-.656 1.295-1.577 2.325-2.762 3.09-1.294.857-2.78 1.285-4.457 1.285A7.966 7.966 0 0 1 1 12.152c.2.019.428.028.684.028 1.33 0 2.524-.41 3.582-1.23a2.67 2.67 0 0 1-1.682-.561 2.855 2.855 0 0 1-.998-1.409c.182.019.355.028.52.028.255 0 .51-.028.765-.082a2.893 2.893 0 0 1-1.64-1.012 2.753 2.753 0 0 1-.657-1.805v-.054c.401.237.83.364 1.285.383a3.185 3.185 0 0 1-.93-1.04 2.758 2.758 0 0 1-.355-1.38c0-.502.137-.98.41-1.436a7.917 7.917 0 0 0 2.612 2.133c1.03.529 2.128.82 3.295.875a3.985 3.985 0 0 1-.055-.656c0-.51.128-.99.383-1.436a2.81 2.81 0 0 1 1.039-1.053 2.773 2.773 0 0 1 1.422-.382c.419 0 .806.082 1.162.246.355.164.67.382.943.656a5.841 5.841 0 0 0 1.832-.684 2.85 2.85 0 0 1-1.258 1.586A6.168 6.168 0 0 0 15 3.402a6.311 6.311 0 0 1-1.45 1.504z"></path>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>-->
+<script>
+  var FileAPI = {
+    debug: false,
+    staticPath: '/assets/fileapi'
+  };
+  var kaspersky = {},
+      peppers = {};
+  window.langUrl = '/';
+  window.authUser = 0;
+  window.userLang = 'en';
+</script>
+
+</body>
+</html>

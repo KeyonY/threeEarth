@@ -1,0 +1,137 @@
+@charset "utf-8";
+// 冬青黑体
+@font-face{
+  font-family: 'dongqingheiti';
+  src: url('~@/assets/fonts/DongQingHeiTi-1.woff') format('woff');
+}
+// 车牌字体
+@font-face{
+  font-family: 'chepaiziti';
+  src: url('~@/assets/fonts/DIN1451.ttf') format('truetype');
+}
+html,body{height: 100%;}
+*{box-sizing: border-box;}
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, div, span, form,input{margin:0; padding:0;}
+ol,li,ul{margin:0; padding:0;}
+body, button, input, select, textarea {font: 12px/1.5 'dongqingheiti',"Microsoft YaHei",\9ed1\4f53,\5b8b\4f53, "Microsoft JhengHei", STHeiti, MingLiu,"Arial","sans-serif";}
+h1, h2, h3, h4, h5, h6 {font-size: 100%;}
+li{list-style:none;}
+address, cite, dfn, em, var {font-style: normal;}
+a {text-decoration: none !important; outline: none ;font-family:'dongqingheiti',"Microsoft YaHei",\9ed1\4f53,\5b8b\4f53, "Microsoft JhengHei", STHeiti, MingLiu,"Arial","sans-serif";cursor:pointer;}
+img {border: 0;}
+button, input, select, textarea {font-size: 100% ;font-family:'dongqingheiti',"Microsoft YaHei", \9ed1\4f53,\5b8b\4f53, "Microsoft JhengHei", STHeiti, MingLiu,"Arial","sans-serif";outline:none;}
+table {border-collapse: collapse; border-spacing: 0;}
+s{text-decoration: none;}
+.clear:after{display:block; content:''; clear:both; visibility:hidden; height:0;}
+.clear{zoom:1;}
+body{-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} // 抗锯齿渲染
+
+$theme-color: #186bff;  // 主题色
+$theme-color-green: #13ca5e; // 主题色-绿色
+$subTheme-color: #65E6B6;  // 副主题色
+$text-title-color: #31313f; // 页面标题栏字体颜色
+$text-color: #454657; // 默认字体颜色
+$form-text-color: #191945; // 表单标题文字颜色
+$subText-color: #797996;  // 次标题颜色
+$proText-color: #9999a8;  // 提示文字、辅助说明、副标题颜色
+$text-search-color: #606079;  // 搜索推荐的文字颜色
+$font-color-orange: #ff6c3c; // 橘色文字
+$border-color: #f3f3f9; // 边框线颜色
+$border-color-light: #f6f6fa; // 边框线颜色-浅灰色
+$btn-color-green: #e7feee; // 按钮等底色
+$btn-color-darkgreen: #eefbf1; // 按钮等底色
+$btn-color-yellow: #fffae8; // 按钮等底色
+$btn-color-blue: #e5fcff; // 按钮等底色
+$btn-color-pink: #fff8f8; // 按钮等底色
+$text-theme-color: #0491FB; // 主题色配套字体颜色
+$border-theme-color: #B0D2FF; // 主题色配套边框线颜色
+$bg-theme-color: #F2FAFF; // 主题色配套背景颜色
+
+/*公共样式*/
+.container{padding: 0 .3rem;}
+
+img.icon-eye-white, img.icon-eye-gray{width: .22rem; height: .17rem;}
+img.icon-time-white, img.icon-time-gray{width: .2rem; height: .2rem;}
+img.icon-search{width: .26rem; height: .26rem;}
+img.icon-clear{width: .29rem; height: .31rem;}
+img.icon-share{width: .24rem; height: .24rem;}
+
+i.icon{display: inline-flex; justify-content: center; align-items: center; width: .8rem; height: .8rem;}
+i.icon:after{content: ''; display: inline-flex;}
+i.icon-select:after{width: .23rem; height: .12rem; background: url('/static/img/icon-select-23x12.png') no-repeat; background-size: .23rem .12rem;}
+i.icon-arrow-right-gray{width: .1rem; height: .18rem; &:after{width: .1rem; height: .18rem; background: url('/static/img/common/arrow-right-gray.png') no-repeat; background-size: .1rem .18rem;}}
+i.icon-arrow-right-white{width: .1rem; height: .18rem; &:after{width: .1rem; height: .18rem; background: url('/static/img/common/arrow-right-white.png') no-repeat; background-size: .1rem .18rem;}}
+
+.lay-mts{margin-top: .1rem;}
+.lay-mtd{margin-top: .2rem;}
+.lay-mtl{margin-top: .3rem;}
+.lay-mtx{margin-top: .4rem;}
+.lay-mtxl{margin-top: .5rem;}
+.lay-mbs{margin-bottom: .1rem;}
+.lay-mbd{margin-bottom: .2rem;}
+.lay-mbl{margin-bottom: .3rem;}
+.lay-mbx{margin-bottom: .4rem;}
+.lay-mrs{margin-right: .1rem;}
+.lay-mrd{margin-right: .2rem;}
+.lay-mrl{margin-right: .3rem;}
+.lay-mrx{margin-right: .4rem;}
+.lay-mls{margin-left: .1rem;}
+.lay-mld{margin-left: .2rem;}
+.lay-mll{margin-left: .3rem;}
+.lay-mlx{margin-left: .4rem;}
+.lay-pts{padding-top: .1rem;}
+.lay-ptd{padding-top: .2rem;}
+.lay-ptl{padding-top: .3rem;}
+.lay-ptx{padding-top: .4rem;}
+.lay-ptxl{padding-top: .5rem;}
+.lay-pt88{padding-top: .88rem;}
+.lay-p3{padding: .3rem;}
+.lay-p5{padding: .5rem;}
+.lay-pbs{padding-bottom: .1rem;}
+.lay-pbd{padding-bottom: .2rem;}
+.lay-pbl{padding-bottom: .3rem;}
+.lay-pb1{padding-bottom: 1rem;}
+.lay-tac{text-align: center;}
+.lay-fl{float: left;}
+.lay-fr{float: right;}
+.flex-cc{display: flex; justify-content: center; align-items: center;}
+.flex-lc{display: flex; justify-content: flex-start; align-items: center;}
+.lay-pr{position: relative;}
+.dsg-fwn{font-weight: normal;}
+.dsg-fc-theme{color: $theme-color;}
+.pageTopPadding{padding-top: .95rem;}
+.pageBottomPadding{padding-bottom: 1.2rem;}
+.font-f-num{font-family: 'chepaiziti';}
+.text-elli{overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+@mixin text-elli {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.text-elli-two{overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+@mixin text-elli-two{overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+
+@mixin flex-lc {display: flex; justify-content: flex-start; align-items: center;}
+@mixin flex-ls {display: flex; justify-content: flex-start; align-items: flex-start;}
+@mixin flex-le {display: flex; justify-content: flex-start; align-items: flex-end;}
+@mixin flex-cc {display: flex; justify-content: center; align-items: center;}
+@mixin flex-cs {display: flex; justify-content: center; align-items: flex-start;}
+@mixin flex-ce {display: flex; justify-content: center; align-items: flex-end;}
+@mixin flex-rc {display: flex; justify-content: flex-end; align-items: center;}
+@mixin flex-rs {display: flex; justify-content: flex-end; align-items: flex-start;}
+@mixin flex-re {display: flex; justify-content: flex-end; align-items: flex-end;}
+@mixin flex-bc {display: flex; justify-content: space-between; align-items: center;}
+@mixin flex-bs {display: flex; justify-content: space-between; align-items: flex-start;}
+@mixin flex-be {display: flex; justify-content: space-between; align-items: flex-end;}
+@mixin flex-ac {display: flex; justify-content: space-around; align-items: center;}
+@mixin flex-as {display: flex; justify-content: space-around; align-items: flex-start;}
+@mixin flex-ae {display: flex; justify-content: space-around; align-items: flex-end;}
+@mixin flex-lc-column {display: flex; flex-direction: column; justify-content: flex-start; align-items: center;}
+@mixin flex-rc-column {display: flex; flex-direction: column; justify-content: flex-end; align-items: center;}
+@mixin flex-le-column {display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-end;}
+@mixin flex-cc-column {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+@mixin flex-cl-column {display: flex; flex-direction: column; justify-content: center; align-items: flex-start;}
+@mixin flex-al-column {display: flex; flex-direction: column; justify-content: space-around; align-items: flex-start;}
+@mixin flex-bl-column {display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start;}
+@mixin flex-lc-wrap {display: flex; justify-content: flex-start; align-items: center; flex-wrap: wrap;}
+@mixin flex-cc-wrap {display: flex; justify-content: center; align-items: center; flex-wrap: wrap;}
+
+/*vant样式覆盖*/
+[class*=van-hairline]::after{border-color: transparent;}
+/*vant样式覆盖 END*/

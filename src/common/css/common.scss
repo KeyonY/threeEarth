@@ -1,0 +1,165 @@
+.ofy-auto{position: relative; height: 100%; padding-bottom: .3rem; overflow-y: auto; overflow-x: hidden; scroll-behavior: smooth; -webkit-overflow-scrolling: touch;}
+.banner{position: fixed; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; img{width: 100%;}}
+.page_title{
+  position: fixed; top: .68rem; left: .4rem; z-index: 1; line-height: 1; font-size: .24rem; color: #fff; font-weight: normal;
+  h2{margin-bottom: .2rem; font-size: .48rem; font-weight: normal;}
+}
+
+.page_userInfo{
+  position: relative; z-index: 2; margin-bottom: .6rem; padding: 0 .3rem; @include flex-lc;
+  .pu_left{
+    flex: 0 0 1.3rem; width: 1.3rem; height: 1.3rem; border: .05rem solid #fff; border-radius: 50%; background-color: #fff; overflow: hidden;
+    img{width: 100%; height: 100%; object-fit: cover;}
+  }
+  .pu_right{
+    flex: 1; min-width: 0; margin-left: .24rem; padding-right: .3rem; line-height: 1; color: #fff;
+    div{font-size: .48rem;}
+    p{font-size: .3rem; margin-top: .18rem; @include text-elli;}
+  }
+}
+
+.page_container{
+  position: relative; z-index: 2; margin-left: .3rem; margin-right: .3rem; padding: .48rem .3rem; border-radius: .06rem; background-color: #fff; overflow: hidden;
+}
+
+.p_title{
+  height: .36rem; line-height: 1; font-size: .36rem; color: $text-color; font-weight: 200; @include flex-lc;
+  div{position: relative;}
+  span{position: relative; z-index: 2;}
+  div:after{content: ''; position: absolute; left: 0; top: .24rem; z-index: 1; display: block; width: 100%; height: .18rem; border-radius: .09rem; background-color: #d2ebfe;}
+}
+
+.list_note{
+  li{margin-bottom: .3rem; line-height: .56rem; font-size: .28rem; color: $subText-color;}
+  .l-d{position: relative; display: inline-flex; color: $theme-color;}
+  .l-d span{position: relative; z-index: 2; font-family: 'chepaiziti';}
+  .l-d:after{content: ''; position: absolute; z-index: 1; left: .12rem; top: .16rem; width: .28rem; height: .28rem; background-color: #d2ebfe; border-radius: 50%; display: block;}
+}
+
+.formShow{
+  margin-top: .5rem; padding: 0 .14rem;
+  li{margin-bottom: .4rem; line-height: 1; font-size: .28rem; color: $text-color; @include flex-lc;}
+  .fs_label{flex: 0 0 1.54rem;}
+  .fs_value{
+    &.blue{color: #105fff;}
+  }
+}
+
+.tab{
+  margin-bottom: .06rem; overflow-x: auto; @include flex-lc;
+  li, &.three li{flex: 0 0 2rem; width: 2rem;}
+  &.four li{flex: 0 0 1.58rem; width: 1.58rem;}
+  li{height: .62rem; margin-right: .18rem;line-height: 1; font-size: .3rem; color: $text-color; border-radius: .38rem; background-color: #e6edf2; @include flex-cc;}
+  li.active{color: #fff; background-image: -webkit-linear-gradient( 0deg, rgb(0,85,255) 0%, rgb(35,144,255) 100%);}
+}
+
+.grid{margin-bottom: .2rem; padding: .3rem .4rem; background-color: #fff; border-radius: .08rem;}
+.g_title{
+  margin-bottom: .4rem; line-height: .36rem; font-size: .36rem; color: $text-title-color;
+  &::before{content: ''; position: relative; top: -.02rem; display: inline-block; width: .05rem; height: .2rem; margin-right: .1rem; background-color: $theme-color;}
+}
+
+.dialog{position: fixed; left: 0; bottom: 0; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: flex-end;}
+
+.defaultHeadImg{width: 1.2rem; height: 1.2rem;}
+
+.panelTitle{
+  line-height: 1; margin-bottom: .2rem; font-size: .36rem; color: $text-color; font-weight: bold;
+  &:before{content: ''; width: .04rem; height: .16rem; margin-right: .08rem; background-color: $theme-color-green; display: inline-block;}
+}
+/*form表单样式*/
+.form{}
+.f_line{margin-bottom: .32rem;}
+.f_line.warp{display: block;}
+.f_line:nth-last-of-type(2){margin-bottom: 0;}
+.f_label{line-height: 1; font-size: .32rem; color: $text-color;}
+.warp .f_label{flex: initial;}
+.f_label .require{margin-left: .1rem; font-size: .28rem; color: #ff9226;}
+.f_line.readOnly{display: flex; justify-content: flex-start; align-items: center;}
+.f_line.readOnly .f_label{width: 1.4rem; font-weight: normal; margin-bottom: 0;}
+.f_line.readOnly.label270 .f_label{width: 2.7rem;}
+.f_line.readOnly .f_value{width: 4.4rem; font-size: .28rem; color: #727284;}
+.f_input, .f_textarea{height: .88rem; margin-top: .22rem; padding-left: .3rem; font-size: .28rem; border-radius: .16rem; border: 1px solid $border-color-light; background-color: #f8f8f8; display: flex; justify-content: flex-start; align-items: center;}
+.f_input.noborder{height: .76rem; margin-top: 0; border: 0; background-color: transparent;}
+.f_textarea{height: 2.14rem;}
+.f_input input::placeholder, .f_input textarea::placeholder{color: #747484;}
+.f_input input{width: 4.82rem; border: 0; outline: none; background-color: transparent;}
+.f_textarea textarea{width: 5.1rem; height: 1.8rem; resize: none; border: 0; outline: none; background-color: transparent;}
+.fl_radio{padding-left: 0; margin-top: .3rem;}
+.fl_radio input[type="radio"]{display: none;}
+.f_upload{margin-top: .22rem;}
+.twoColumn{display: flex; justify-content: space-around; align-items: center;}
+.twoColumn .f_input{width: 2.7rem;}
+.twoColumn .f_input input{width: 1.5rem;}
+.flt_text{width: .44rem; font-size: .28rem; color: #727284; text-align: center;}
+.f_submit{margin-top: .6rem;}
+.f_submit button{width: 100%; height: .88rem; line-height: .88rem; margin-bottom: .22rem; border: 0; border-radius: .16rem; outline: none; font-size: .32rem; color: #fff; text-align: center;
+  background-color: $theme-color;}
+.f_submit button.thm-line{width: 100%; height: .88rem; line-height: .88rem; border: 1px solid #bde2fd; border-radius: .16rem; outline: none; font-size: .32rem; color: $text-color; text-align: center;
+  background-color: #f7fcff;}
+.f_submit button:last-child{margin-bottom: 0;}
+
+.f_inputFile{position: relative; width: 160px; height: 200px; margin: .2rem auto 0; border-radius: 4px;}
+.f_inputFile .iconBox{position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
+.f_inputFile .iconBox .van-icon-clear{position: absolute; right: -.1rem; top: -.1rem; width: .4rem; height: .4rem; background-color: #fff; border-radius: 50%;}
+.f_inputFile .img{width: 100%; height: 100%;}
+
+.f_input.fl_calender{
+  i.icon:after{width: .28rem; height: .29rem; background: url('/static/img/icon-calendar.png') no-repeat center center / .28rem .29rem;}
+}
+
+.f_upload{
+  min-height: 1.2rem; line-height: 1; padding: 0 .2rem;
+  .f_upImg_list{
+    @include flex-lc-wrap;
+    li{position: relative; width: 1.2rem; height: 1.2rem; margin-right: .32rem; margin-bottom: .3rem; border-radius: .08rem; overflow: hidden;}
+    li:nth-of-type(4n){margin-right: 0;}
+    li img{width: 1.2rem; height: 1.2rem; object-fit: cover;}
+    li i.icon{position: absolute; top: .04rem; right: .04rem;}
+    i.icon{width: .3rem; height: .3rem;}
+    i.icon-close-circle:after{width: .3rem; height: .3rem; background: url('/static/img/icon-close-circle.png') no-repeat; background-size: .3rem .3rem;}
+    .f_upload_icon{width: 1.2rem; height: 1.2rem; margin-bottom: .3rem; overflow: hidden; background: url('/static/img/btn-upfile-120x120.png') no-repeat center center / 1.2rem 1.2rem;}
+    .f_upload_icon input{opacity: 0;}
+  }
+}
+.van-cell__title{text-align: center;}
+/*form表单样式 END*/
+
+// 一整行的按钮
+.fullBtn button{width: 100%; height: .88rem; border-radius: .08rem; border: 0; outline: 0; background-color: $theme-color; font-size: .32rem; color: #fff;}
+
+
+// 遮罩层
+.dialog{
+  position: fixed; left: 0; top: 0; z-index: 6; width: 100%; height: 100%; background-color: rgba(0,0,0,.4); display: flex; justify-content: center; align-items: center;
+  .d_container{margin: 0 .3rem; padding: .4rem .6rem .5rem; background-color: #fff; border-radius: .16rem;}
+}
+
+// 详情页的标题，带有绿色圆圈和底色线的标题
+.detail_title{
+  margin-bottom: .34rem; @include flex-cc;
+  .dt_circle{width: .14rem; height: .14rem; margin-right: .12rem; border: .02rem solid $theme-color-green; border-radius: 50%;}
+  .dt_title{position: relative;}
+  .dt_title div{position: relative; z-index: 2; line-height: 1; font-size: .36rem; color: $text-color;}
+  .dt_bgLine{position: absolute; bottom: -.02rem; left: 0; z-index: 1; width: 100%; height: .12rem; background-color: #e7faef;}
+}
+
+.finished-text{position: relative; z-index: 2; margin-top: .4rem; line-height: 1; font-size: .28rem; color: #bdbdcb; text-align: center;}
+
+// 使用editor编辑的内容的样式
+.editorDetail{
+  margin-top: .3rem; padding: 0 .6rem; line-height: .5rem; font-size: .28rem; color: $text-color;
+  img{max-width: 6.3rem; margin-bottom: .2rem;}
+  p{margin-bottom: .2rem;}
+}
+.petty.editorDetail{padding: 0 .3rem;}
+
+// 详情页水印层
+.waterMark{position: absolute; left: 0; top: -9999px; z-index: 1;}
+.waterMarkDiv{position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; opacity: .3;/* transform: rotate(-30deg);*/}
+.detail-content{position: relative; z-index: 2;}
+
+.noData{
+  width: 100%; padding: 10% 0; text-align: center;
+  .n_text{margin-top: .6rem; line-height: .32rem; font-size: .32rem; color: $proText-color;}
+}
